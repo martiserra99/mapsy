@@ -1,4 +1,4 @@
-# mapis
+# mapsy
 
 The `mapsy` utility function is used to map a value to a corresponding function based on the type of the value.
 
