@@ -1,27 +1,32 @@
 {
   "name": "mapsy",
-  "version": "1.0.1",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "tsc src/index.ts --declaration --outDir dist"
-  },
-  "keywords": [
-    "javascript",
-    "typescript",
-    "transform",
-    "project",
-    "map"
+  "version": "2.0.0",
+  "main": "build/index.cjs.js",
+  "module": "build/index.esm.js",
+  "source": "src/index.ts",
+  "types": "build/index.d.ts",
+  "files": [
+    "build"
   ],
+  "scripts": {
+    "lint": "eslint",
+    "test": "vitest run",
+    "build": "rollup -c",
+    "start": "npm run build && cd ./example && npm install && npm run start"
+  },
+  "keywords": [],
   "author": "Marti Serra",
   "license": "MIT",
-  "description": "Utility function to map a value to a function",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/martiserra99/mapsy"
-  },
-  "homepage": "https://github.com/martiserra99/mapsy",
+  "description": "",
   "devDependencies": {
-    "tslib": "^2.6.3",
-    "typescript": "^5.5.4"
+    "@eslint/js": "^9.13.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.1",
+    "eslint": "^9.13.0",
+    "rollup": "^4.24.0",
+    "tslib": "^2.8.0",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.11.0",
+    "vitest": "^2.1.3"
   }
 }
