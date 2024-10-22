@@ -1,6 +1,6 @@
 {
   "name": "mapsy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "build/index.cjs.js",
   "module": "build/index.esm.js",
   "source": "src/index.ts",
@@ -14,10 +14,21 @@
     "build": "rollup -c",
     "start": "npm run build && cd ./example && npm install && npm run start"
   },
-  "keywords": [],
+  "keywords": [
+    "javascript",
+    "typescript",
+    "transform",
+    "project",
+    "map"
+  ],
   "author": "Marti Serra",
   "license": "MIT",
-  "description": "",
+  "description": "Utility function to map a value to a function",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/martiserra99/mapsy"
+  },
+  "homepage": "https://github.com/martiserra99/mapsy",
   "devDependencies": {
     "@eslint/js": "^9.13.0",
     "@rollup/plugin-terser": "^0.4.4",
